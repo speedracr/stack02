@@ -1,0 +1,40 @@
+!!! 5
+%html
+  %head
+    %title Learn to code in Berlin | Stackademy
+    %link{ :href => "../stylesheets/styles.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    / %link{ :href => "stylesheets/styles.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+
+  %body
+    %nav.navbar.navbar-default.navbar-fixed-top{ :role => "navigation" }
+      .container
+        .navbar-header
+          %button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-collapse")
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand.logo-wrapper{ :href => "/", :alt => "Stackademy" }
+            %img{:src => "img/logo.svg", :alt => "Stackademy", :class => "logo"}
+
+        / Full menu
+        .collapse.navbar-collapse#navbar-collapse
+          %ul.nav.navbar-right.navbar-no-collapse
+            %li 
+              %a{ :href => "apply.html", :class => "btn-navbar" } Apply!
+          %ul.nav.navbar-nav.navbar-right
+            %li.border-bottom
+              %a{:href => "faq.html" } FAQs
+            %li.border-bottom
+              %a{:href => "http://blog.stackademy.com" } Blog
+            %li.border-bottom.dropdown
+              %a{:href => "programs"}
+                Our programs
+                %b.caret
+              %ul.dropdown-menu
+                %li 
+                  %a{:href => "#"} 1
+                %li 
+                  %a{:href => "#"} 2 
+  
+    %section= yield
