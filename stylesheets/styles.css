@@ -8,6 +8,30 @@
   src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
 }
 
+/* line 2, ../sass/_navbar.sass */
+.navbar-default .navbar-toggle {
+  margin-top: 13px;
+  background-color: transparent;
+  background: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  border-color: transparent !important;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 12, ../sass/_navbar.sass */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* line 20, ../sass/_navbar.sass */
+img.logo {
+  width: 260px;
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -1416,7 +1440,7 @@ html {
 
 /* line 27, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #141414;
