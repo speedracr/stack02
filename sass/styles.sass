@@ -1,3 +1,33 @@
 @import "bootstrap-compass"
 @import "bootstrap-variables"
+@import "navbar"
+@import "effects"
+// import content, navbar
 @import "bootstrap"
+
+
+// General settings and overrides
+$body-bg: #ecf0f1
+body a
+  +transition($transition1)
+  &:hover,
+  &:focus
+    text-decoration: none
+
+.text-center
+  text-align:       center
+
+.caret
+  margin-top:       -3px
+
+a.downloadlink
+  font-weight:        700
+
+  &::after
+    content:          "(PDF)"
+    font-size:        8px
+    padding:          0 0 0 6px
+
+  &:hover,
+  &:active
+    border-bottom:    2px solid $brand-primary

@@ -1,3 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Ubuntu:500,700);
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot);
+  src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype");
+  src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff) format("woff");
+  src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts//glyphicons-halflings-regular.ttf) format("truetype");
+  src: url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -1409,7 +1419,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #141414;
   background-color: white;
 }
 
@@ -1517,7 +1527,7 @@ hr {
 /* line 10, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: Ubuntu, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3900,7 +3910,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #545454;
 }
 
 @media (min-width: 768px) {
@@ -8032,4 +8042,39 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+/* line 11, ../sass/styles.sass */
+body a {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 13, ../sass/styles.sass */
+body a:hover, body a:focus {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/styles.sass */
+.text-center {
+  text-align: center;
+}
+
+/* line 20, ../sass/styles.sass */
+.caret {
+  margin-top: -3px;
+}
+
+/* line 23, ../sass/styles.sass */
+a.downloadlink {
+  font-weight: 700;
+}
+/* line 26, ../sass/styles.sass */
+a.downloadlink::after {
+  content: "(PDF)";
+  font-size: 8px;
+  padding: 0 0 0 6px;
+}
+/* line 31, ../sass/styles.sass */
+a.downloadlink:hover, a.downloadlink:active {
+  border-bottom: 2px solid #428bca;
 }

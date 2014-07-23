@@ -1,3 +1,16 @@
+@import bootstrap/variables
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Ubuntu:500,700)
+
+@font-face
+  font-family: 'Glyphicons Halflings'
+  src:  url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot)
+  src:  url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype')
+  src:  url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff) format('woff')
+  src:  url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts//glyphicons-halflings-regular.ttf) format('truetype')
+  src:  url(https://www.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+
+
+
 // Override Bootstrap variables here (defaults from bootstrap-sass v3.2.0.0):
 
 // a flag to toggle asset pipeline / compass integration
@@ -12,17 +25,18 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-// $gray-darker:            lighten(#000, 13.5%) // #222
+$gray-darker:            lighten(#000, 13.5%) // #222
+$gray-dark:              #141414
 // $gray-dark:              lighten(#000, 20%)   // #333
-// $gray:                   lighten(#000, 33.5%) // #555
-// $gray-light:             lighten(#000, 46.7%) // #777
-// $gray-lighter:           lighten(#000, 93.5%) // #eee
+$gray:                   lighten(#000, 33.5%) // #555
+$gray-light:             lighten(#000, 46.7%) // #777
+$gray-lighter:           lighten(#000, 93.5%) // #eee
 
-// $brand-primary:         #428bca
-// $brand-success:         #5cb85c
-// $brand-info:            #5bc0de
-// $brand-warning:         #f0ad4e
-// $brand-danger:          #d9534f
+$brand-primary:         #428bca
+$brand-success:         #5cb85c
+$brand-info:            #5bc0de
+$brand-warning:         #f0ad4e
+$brand-danger:          #d9534f
 
 //== Scaffolding
 //
@@ -31,24 +45,24 @@
 //* Background color for `<body>`.
 // $body-bg:               #fff
 //* Global text color on `<body>`.
-// $text-color:            $gray-dark
+$text-color:            $gray-dark
 
 //* Global textual link color.
-// $link-color:            $brand-primary
+$link-color:            $brand-primary
 //* Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+$link-hover-color:      darken($link-color, 15%)
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-sans-serif:     Lato, Helvetica, Arial, sans-serif
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
 // $font-family-base:        $font-family-sans-serif
 
-// $font-size-base:          14px
+$font-size-base:          14px
 // $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
 
@@ -65,8 +79,9 @@
 // $line-height-computed:    floor(($font-size-base * $line-height-base)) // ~20px
 
 //* By default, this inherits from the `<body>`.
-// $headings-font-family:    inherit
-// $headings-font-weight:    500
+$headings-font-family:       Ubuntu, sans-serif
+// $headings-font-family:       inherit
+$headings-font-weight:       500
 // $headings-line-height:    1.1
 // $headings-color:          inherit
 
