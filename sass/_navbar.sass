@@ -26,11 +26,11 @@ nav.navbar
   &:focus
     background-color:   $hover-background!important
 
-.navbar-default .navbar-nav li a
+.navbar-default .navbar-nav li a.navlink
   color:                  $white!important
 
 .navbar-default .navbar-nav .open 
-  a
+  a.navlink
     background-color:     transparent!important
     background:           transparent!important
     
@@ -38,9 +38,6 @@ nav.navbar
     &:focus
       background-color:     transparent!important
       background:           transparent!important
-
-a.link-collapse
-  color:            $gray-dark
 
 // Logo
 img.logo 
@@ -57,34 +54,7 @@ img.logo
     
     margin:   0
     padding:  0.8em 0 0.8em 0
-
-    li.border-bottom
-      margin-bottom: 3px
-
-      &:hover,
-      &:focus
-        margin-bottom: 0
-
-  a.navlink
-    margin:   0 0.6em
-
-    &:hover
-      +transition($transition_none)
-      border-bottom: 3px solid $brand-primary
-
-  li.open > a.navlink
-    border-bottom:    0
-
-  ul.dropdown-menu > li > a
-    margin-bottom:    0
-    text-transform:   none
-    +transition($transition_none)
-
-    &:hover,
-    &:focus
-      +linkhover
-
-  ul.nav
+    
     li
       a.btn-navbar
         background:       lighten($brand-primary, 10%)
@@ -96,11 +66,44 @@ img.logo
         &:hover,
         &:focus
           +transition($transition_none)
-          background:   darken($brand-primary, 13.5%)
+          background:   darken($brand-primary, 13.5%)    
+
+    li.border-bottom
+      margin-bottom: 3px
+
+      &:hover,
+      &:focus
+        margin-bottom: 0
+
+  a.navlink
+    margin:   0 0.6em
+
+    &:hover,
+    &:focus
+      +transition($transition_none)
+      border-bottom: 3px solid $brand-primary
+
+  li.open > a.navlink
+    border-bottom:    0
 
 .dropdown-menu
   -webkit-box-shadow:     none!important
   box-shadow:             none!important
+
+  li 
+    padding:              0.1em 0
+
+    a
+      color:                $gray-dark
+      font-size:            1.1em
+      text-transform:       none
+      +transition($transition_none)    
+
+      &:hover,
+      &:focus
+        background:   $brand-primary!important
+        color:        $white!important
+
 
 @media screen and (max-width: $screen-sm-max)
   .navbar-no-collapse

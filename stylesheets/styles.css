@@ -44,34 +44,29 @@ nav.navbar {
 }
 
 /* line 29, ../sass/_navbar.sass */
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a.navlink {
   color: white !important;
 }
 
 /* line 33, ../sass/_navbar.sass */
-.navbar-default .navbar-nav .open a {
+.navbar-default .navbar-nav .open a.navlink {
   background-color: transparent !important;
   background: transparent !important;
 }
 /* line 37, ../sass/_navbar.sass */
-.navbar-default .navbar-nav .open a:hover, .navbar-default .navbar-nav .open a:focus {
+.navbar-default .navbar-nav .open a.navlink:hover, .navbar-default .navbar-nav .open a.navlink:focus {
   background-color: transparent !important;
   background: transparent !important;
 }
 
-/* line 42, ../sass/_navbar.sass */
-a.link-collapse {
-  color: #141414;
-}
-
-/* line 46, ../sass/_navbar.sass */
+/* line 43, ../sass/_navbar.sass */
 img.logo {
   width: 260px;
   margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 53, ../sass/_navbar.sass */
+  /* line 50, ../sass/_navbar.sass */
   ul.nav {
     font-size: 17px;
     font-weight: 700;
@@ -79,49 +74,7 @@ img.logo {
     margin: 0;
     padding: 0.8em 0 0.8em 0;
   }
-  /* line 61, ../sass/_navbar.sass */
-  ul.nav li.border-bottom {
-    margin-bottom: 3px;
-  }
-  /* line 64, ../sass/_navbar.sass */
-  ul.nav li.border-bottom:hover, ul.nav li.border-bottom:focus {
-    margin-bottom: 0;
-  }
-
-  /* line 68, ../sass/_navbar.sass */
-  a.navlink {
-    margin: 0 0.6em;
-  }
-  /* line 71, ../sass/_navbar.sass */
-  a.navlink:hover {
-    -webkit-transition: all 0s;
-    -moz-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s;
-    border-bottom: 3px solid #428bca;
-  }
-
-  /* line 75, ../sass/_navbar.sass */
-  li.open > a.navlink {
-    border-bottom: 0;
-  }
-
-  /* line 78, ../sass/_navbar.sass */
-  ul.dropdown-menu > li > a {
-    margin-bottom: 0;
-    text-transform: none;
-    -webkit-transition: all 0s;
-    -moz-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s;
-  }
-  /* line 83, ../sass/_navbar.sass */
-  ul.dropdown-menu > li > a:hover, ul.dropdown-menu > li > a:focus {
-    background: #2c689c;
-    color: white;
-  }
-
-  /* line 89, ../sass/_navbar.sass */
+  /* line 59, ../sass/_navbar.sass */
   ul.nav li a.btn-navbar {
     background: #6aa3d5;
     color: white;
@@ -129,7 +82,7 @@ img.logo {
     margin: 2px 0 0 1.6em;
     border-radius: 2px;
   }
-  /* line 96, ../sass/_navbar.sass */
+  /* line 66, ../sass/_navbar.sass */
   ul.nav li a.btn-navbar:hover, ul.nav li a.btn-navbar:focus {
     -webkit-transition: all 0s;
     -moz-transition: all 0s;
@@ -137,21 +90,66 @@ img.logo {
     transition: all 0s;
     background: #2c689c;
   }
+  /* line 71, ../sass/_navbar.sass */
+  ul.nav li.border-bottom {
+    margin-bottom: 3px;
+  }
+  /* line 74, ../sass/_navbar.sass */
+  ul.nav li.border-bottom:hover, ul.nav li.border-bottom:focus {
+    margin-bottom: 0;
+  }
+
+  /* line 78, ../sass/_navbar.sass */
+  a.navlink {
+    margin: 0 0.6em;
+  }
+  /* line 81, ../sass/_navbar.sass */
+  a.navlink:hover, a.navlink:focus {
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+    border-bottom: 3px solid #428bca;
+  }
+
+  /* line 86, ../sass/_navbar.sass */
+  li.open > a.navlink {
+    border-bottom: 0;
+  }
 }
-/* line 101, ../sass/_navbar.sass */
+/* line 89, ../sass/_navbar.sass */
 .dropdown-menu {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+/* line 93, ../sass/_navbar.sass */
+.dropdown-menu li {
+  padding: 0.1em 0;
+}
+/* line 96, ../sass/_navbar.sass */
+.dropdown-menu li a {
+  color: #141414;
+  font-size: 1.1em;
+  text-transform: none;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+/* line 102, ../sass/_navbar.sass */
+.dropdown-menu li a:hover, .dropdown-menu li a:focus {
+  background: #428bca !important;
+  color: white !important;
+}
 
 @media screen and (max-width: 991px) {
-  /* line 106, ../sass/_navbar.sass */
+  /* line 109, ../sass/_navbar.sass */
   .navbar-no-collapse {
     padding-top: 2em;
     margin: 0 -15px;
   }
 
-  /* line 110, ../sass/_navbar.sass */
+  /* line 113, ../sass/_navbar.sass */
   .navbar-default > li > a.navlink {
     background: #777777;
   }
