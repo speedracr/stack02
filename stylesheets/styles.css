@@ -59,14 +59,19 @@ nav.navbar {
   background: transparent !important;
 }
 
-/* line 43, ../sass/_navbar.sass */
+/* line 42, ../sass/_navbar.sass */
+a.link-collapse {
+  color: #141414;
+}
+
+/* line 46, ../sass/_navbar.sass */
 img.logo {
   width: 260px;
   margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 50, ../sass/_navbar.sass */
+  /* line 53, ../sass/_navbar.sass */
   ul.nav {
     font-size: 17px;
     font-weight: 700;
@@ -74,20 +79,20 @@ img.logo {
     margin: 0;
     padding: 0.8em 0 0.8em 0;
   }
-  /* line 58, ../sass/_navbar.sass */
+  /* line 61, ../sass/_navbar.sass */
   ul.nav li.border-bottom {
     margin-bottom: 3px;
   }
-  /* line 61, ../sass/_navbar.sass */
+  /* line 64, ../sass/_navbar.sass */
   ul.nav li.border-bottom:hover, ul.nav li.border-bottom:focus {
     margin-bottom: 0;
   }
 
-  /* line 65, ../sass/_navbar.sass */
+  /* line 68, ../sass/_navbar.sass */
   a.navlink {
     margin: 0 0.6em;
   }
-  /* line 68, ../sass/_navbar.sass */
+  /* line 71, ../sass/_navbar.sass */
   a.navlink:hover {
     -webkit-transition: all 0s;
     -moz-transition: all 0s;
@@ -96,12 +101,12 @@ img.logo {
     border-bottom: 3px solid #428bca;
   }
 
-  /* line 72, ../sass/_navbar.sass */
+  /* line 75, ../sass/_navbar.sass */
   li.open > a.navlink {
     border-bottom: 0;
   }
 
-  /* line 75, ../sass/_navbar.sass */
+  /* line 78, ../sass/_navbar.sass */
   ul.dropdown-menu > li > a {
     margin-bottom: 0;
     text-transform: none;
@@ -110,13 +115,13 @@ img.logo {
     -o-transition: all 0s;
     transition: all 0s;
   }
-  /* line 80, ../sass/_navbar.sass */
+  /* line 83, ../sass/_navbar.sass */
   ul.dropdown-menu > li > a:hover, ul.dropdown-menu > li > a:focus {
     background: #2c689c;
     color: white;
   }
 
-  /* line 86, ../sass/_navbar.sass */
+  /* line 89, ../sass/_navbar.sass */
   ul.nav li a.btn-navbar {
     background: #6aa3d5;
     color: white;
@@ -124,7 +129,7 @@ img.logo {
     margin: 2px 0 0 1.6em;
     border-radius: 2px;
   }
-  /* line 93, ../sass/_navbar.sass */
+  /* line 96, ../sass/_navbar.sass */
   ul.nav li a.btn-navbar:hover, ul.nav li a.btn-navbar:focus {
     -webkit-transition: all 0s;
     -moz-transition: all 0s;
@@ -133,20 +138,20 @@ img.logo {
     background: #2c689c;
   }
 }
-/* line 98, ../sass/_navbar.sass */
+/* line 101, ../sass/_navbar.sass */
 .dropdown-menu {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 103, ../sass/_navbar.sass */
+  /* line 106, ../sass/_navbar.sass */
   .navbar-no-collapse {
     padding-top: 2em;
     margin: 0 -15px;
   }
 
-  /* line 107, ../sass/_navbar.sass */
+  /* line 110, ../sass/_navbar.sass */
   .navbar-default > li > a.navlink {
     background: #777777;
   }
