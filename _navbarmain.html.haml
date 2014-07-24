@@ -7,7 +7,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand.logo-wrapper{ :href => "/", :alt => "Stackademy" }
-        %img{:src => "img/stck.svg", :alt => "Stackademy", :class => "logo"}
+        %img{:src => "img/stckstwh.svg", :alt => "Stackademy", :class => "logo"}
 
     / Full menu
     .collapse.navbar-collapse#navbar-collapse
@@ -16,19 +16,17 @@
           %a{ :href => "apply.html", :class => "btn-navbar" } Apply!
       %ul.nav.navbar-nav.navbar-right
         %li.border-bottom
-          %a{:href => "http://blog.stackademy.com" } Blog
+          %a{:href => "http://blog.stackademy.com", :class => "navlink" } Blog
         %li.border-bottom
-          %a{:href => "faq.html" } About    
+          %a{:href => "about.html", :class => "navlink" } About    
         %li.border-bottom
-          %a{:href => "faq.html" } FAQs
+          %a{:href => "faq.html", :class => "navlink" } FAQs
         %li.border-bottom.dropdown
-          %a(href="#" class="navlink dropdown-toggle" data-toggle="dropdown")
-            Our programs
-            %b.caret
-            %ul.dropdown-menu
-              %li 
-                %a{:href => "#"} Web Application Development
-              %li 
-                %a{:href => "#"} iOS Development
-              %li 
-                %a{:href => "#"} Corporate Training     
+          %a(href="#" class="navlink dropdown-toggle" data-toggle="dropdown") Our programs <b class="caret"></b>
+          %ul.dropdown-menu
+            %li 
+              %a{:href => "#"} Web Application Development
+            %li 
+              %a{:href => "#"} iOS Development
+            %li 
+              %a{:href => "#"} Corporate Training     
