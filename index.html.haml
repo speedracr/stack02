@@ -1,7 +1,119 @@
 .sitewrapper
   / This carries the hero img
   %header.hero
-    .navwrapper= render '_navbarmain.html.haml'
-  .test Much index. Very image.
+    = render '_navbarmain.html.haml'
+    .container 
+      .row
+        .col-md-12.center
+          %h1.title.shadow
+            %span.firstline
+              Learn to code in Berlin. 
+              %br/
+            %span.secondline
+              Full time. Hands on.
+          %h2.subtitle.shadow
+            .announce
+              Upcoming course
+            .nextcourse
+              Web Application Development
+              %br/
+              with Ruby on Rails
+              %br/
+              11 weeks, Sep. 15 - Nov. 28
+
+  %section.container
+    .row
+      .col-md-6.imgcolumn
+        Web Application Development
+      .col-md-6.textcolumn
+        %ul.nobullets
+          %li 11 weeks of Web Application Development
+          %li Ruby on Rails
+          %li JavaScript &amp; jQuery
+          %li HTML/CSS3 and frontend frameworks
+          %li Monday to Friday, 9am to 6pm
+          %li Experienced instructors
+          %li from EUR 5,600
+          %li 
+            %a{:href => "apply.html", :class => "applylink"} Apply now!
+
+      .col-md-12.center
+        %p
+          We teach you how to plan, build and deploy web applications, and take you from the basics all the way to building full-blown web applications with Ruby on Rails and using a range of tools and technologies - from frontend frameworks and databases to version control, testing, server setup and more.
+
+    .row
+      .col-md-12
+        %h3.sectiontitle.center Our partners
+      .col-md-12.center
+        %p
+          Betahaus
+
+  %section.container
+    .row
+      .col-md-12
+        %h3.sectiontitle.center Course content
+      .col-md-12.text
+        %p
+          We don’t require previous programming experience and get you up to speed in the course: With new lessons and exercises every day, followed by time for practice and project work, you will be writing code every day of the week and put your skills to use in class projects.
+
+        %p
+          %dl.contentlist 
+            %dt This is our roadmap:
+            %dd Introductory prep course with a focus on HTML/CSS and programming basics
+            %dd More
+            %dd Even more
+
+  %section.container
+    .row
+      .col-md-12
+        %h3.sectiontitle.center Instructor
+    .row
+      .col-md-6.imgcolumn
+        %img{:src => "img/edward.jpg", :alt => "Edward"}/
+      .col-md-6.textcolumn
+        %p
+          Our Web Application Development class is led by Edward McCaughan. With a degree in robotics and electrical engineering and several years of experience as a Ruby on Rails developer working on real-life applications and projects, Edward brings both an excellent theoretical understanding and practical experience to the course.
+          %br/
+          Edward has been teaching both beginner-level and advanced Ruby on Rails courses since 2013, and is a volunteer mentor at Rails Girls Berlin. 
+
+  %section.container
+    .row
+      .col-md-12
+        %h3.sectiontitle.center Berlin
+    .row
+      .col-md-6.imgcolumn
+        %img{:src => "img/placeholder1.png", :alt => "Berlin"}/
+      .col-md-6.textcolumn
+        %p
+          Berlin is a city with rich history and a colorful present, and very easy to get comfortable in for international visitors. Startups are a big thing here, so chances are, you'll feel right at home, meet great people and discover a city that is unlike any other.
+        %p
+          We can help you find accommodation in Berlin, if 
+          %a{:href => "https://www.airbnb.com/s/Berlin--Germany"} Airbnb
+          , 
+          %a{:href => "http://www.wimdu.com/berlin"} Wimdu 
+          , and 
+          %a{:href => "http://www.9flats.com/us/berlin"} 9flats 
+          don't do the trick.
+        %p
+          As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work. (The German Federal Foreign Office has more information on its 
+          %a{:href => "http://www.auswaertiges-amt.de/EN/EinreiseUndAufenthalt/Visabestimmungen_node.html"} website
+          %br/
+          Please make sure you know the requirements for your specific situation and contact us and the German embassy in your country when in doubt. Also let us know if you need assistance with German-language forms or requests.
+          %br/
+          Note that you will generally not be allowed to take on any kind of work in Berlin during your stay. However, should you seek a position in Berlin after the conclusion of the course and get hired, you will find that many employers are able to assist in the process of getting all necessary documentation for a longer-term residency as a non-EU citizen.
+
+  %section.container
+    .row
+      .col-md-12
+        .applybutton
+          %a{:href => "apply.html"} Apply now!
+
+  %section.container
+    .row
+      .col-md-12
+        .email
+          %p Sign up for our newsletter to hear about new course announcements
+          
+
 
   %footer= render '_footer.html.haml'

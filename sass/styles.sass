@@ -12,13 +12,15 @@ body a
   +transition($transition1)
   &:hover,
   &:focus
-    text-decoration: none
+    text-decoration:  none
 
-.text-center
-  text-align:       center
++selection(#0CAF60)
+
+.center
+  text-align:         center
 
 .caret
-  margin-top:       -3px
+  margin-top:         -3px
 
 a.downloadlink
   font-weight:        700
@@ -27,5 +29,23 @@ a.downloadlink
   &:active
     border-bottom:    2px solid $brand-primary
 
-.test
-  color:              red
+.shadow
+  text-shadow:        $shadow1
+
+// Hero section
+header.hero 
+  background:             url(../img/backgr_test.jpg) no-repeat
+  background-size:        cover
+  padding-bottom:         150px
+  background-attachment:  fixed
+
+h1.title,
+h2.subtitle
+  color:                  $white
+
+.firstline
+  font-size:              1.6em
+
+.secondline
+  font-size:              1.2em
+  letter-spacing:         0.2em

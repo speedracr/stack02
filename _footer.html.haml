@@ -1,3 +1,40 @@
-.container
+.container.footerwrapper
   .row
-    .col-md-6 Much footer. So text.
+    .col-md-3.col-md-offset-1
+      %dl.footerlinks
+        %dt Our programs
+        %dd 
+          %a{:href => "#"} Web Application Development
+        %dd
+          %a{:href => "#"} iOS Development
+        %dd
+          %a{:href => "#"} Corporate clients
+    .col-md-3
+      %dl.footerlinks
+        %dt 
+          %a{:href => "#"} About
+        %dd
+          %a{:href => "#"} FAQs
+        %dd
+          %a{:href => "#"} Our students
+        %dd
+          %a{:href => "#"} Blog
+    .col-md-3
+      %dl.footerlinks
+        %dt Contact
+        %dd
+          %a{:href => "#"} Impressum | Imprint
+        %dd
+          %a{:href => "#"} Datenschutzerkl&auml;rung | Privacy policy
+        %dd
+          %a{:href => "#"} Email newsletter
+
+  .row
+    .col-md-3
+      %img{:src => "img/stckwh.svg", :class => "footerlogo", :alt => "Stackademy"}/
+    .col-md-2
+      .footericon.twitter
+        Twitter
+    .col-md-3
+      .footertext.email
+        %a{:href => "#"} hello@stackademy.com   

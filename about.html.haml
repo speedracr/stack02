@@ -1,0 +1,20 @@
+.pagewrapper
+  %header
+    = render '_navbarmain.html.haml'
+
+  %section.pagesection
+    .container
+      .row
+        .col-md-3.hidden-sm
+          %sidebar
+            %ul.sidenav
+              %a{:href => "#"}
+                %li About
+              %a{:href => "#"}
+                %li FAQs
+        .col-md-9
+          %h4.pagetitle About us
+          .pagecontent
+            %p Much text. Very about.
+
+  %footer= render '_footer.html.haml'
