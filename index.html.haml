@@ -3,7 +3,7 @@
   %header.hero
     = render '_navbarmain.html.haml'
     .container 
-      .row
+      .row    
         .col-md-12.center
           %h1.title.shadow
             %span.firstline
@@ -68,9 +68,9 @@
       .col-md-12
         %h3.sectiontitle.center Instructor
     .row
-      .col-md-6.imgcolumn
+      .col-md-4.imgcolumn
         %img{:src => "img/edward.jpg", :alt => "Edward"}/
-      .col-md-6.textcolumn
+      .col-md-8.textcolumn
         %p
           Our Web Application Development class is led by Edward McCaughan. With a degree in robotics and electrical engineering and several years of experience as a Ruby on Rails developer working on real-life applications and projects, Edward brings both an excellent theoretical understanding and practical experience to the course.
           %br/
@@ -79,11 +79,23 @@
   %section.container
     .row
       .col-md-12
+        %h3.sectiontitle.center Recruiting program
+    .row
+      .col-md-4.imgcolumn
+        %img{:src => "img/edward.jpg", :alt => "recruiting"}/
+      .col-md-8.textcolumn
+        %p
+          We partner with a number of Berlin companies that are looking for great talent to join them, and will further expand our recruiting program in the future. In any case, we are happy to get you in touch with our partners, and should you pass the hiring interviews and join one of them full-time, we will sweeten the deal and refund EUR 1,000.- of your tuition. If you are a company looking for ambitious new talents, in particular junior Rails developers, you should totally 
+          %a{:href => "contact.html"} let us know.
+
+  %section.container
+    .row
+      .col-md-12
         %h3.sectiontitle.center Berlin
     .row
-      .col-md-6.imgcolumn
+      .col-md-4.imgcolumn
         %img{:src => "img/placeholder1.png", :alt => "Berlin"}/
-      .col-md-6.textcolumn
+      .col-md-8.textcolumn
         %p
           Berlin is a city with rich history and a colorful present, and very easy to get comfortable in for international visitors. Startups are a big thing here, so chances are, you'll feel right at home, meet great people and discover a city that is unlike any other.
         %p
@@ -113,6 +125,14 @@
       .col-md-12
         .email
           %p Sign up for our newsletter to hear about new course announcements
+
+  %section.container
+    .row
+      .col-md-12
+        .press
+          %h4 Find us mentioned on
+          .col-md-3.col-md-offset-3 VentureVillage
+          .col-md-3 CareerFoundry
           
 
 

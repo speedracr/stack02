@@ -26,6 +26,21 @@ $shadow1:         0 0 10px rgba(0,0,0,1.0)
   background-image: -o-linear-gradient(to bottom,$color1,$color2)
   background-image: linear-gradient(to bottom,$color1,$color2)
 
+$astop1:          0%
+$astop2:          10%
+$astop3:          20%
+$astop4:          100%
+
+$acolor1:         rgba(0,0,0,0)
+$acolor2:         rgba(0,0,0,0.4)
+$acolor3:         rgba(0,0,0,0.65)
+$acolor4:         rgba(0,0,0,0.9)
+
+=gradientbackgroundbottom($stop1, $stop2, $stop3, $stop4, $color1, $color2, $color3, $color4)
+  // use with bottom: 0, position: absolute, z-index: [on top] for wrapper-div to align with bottom
+  // recommended stops are 0%, 10%, 20%, 100%
+  // recommended opacities: 0, 0.4, 0.65, 0.9
+  background: linear-gradient(to bottom, $color1, $stop1, $color2, $stop2, $color3, $stop3, $color4, $stop4)
 
 // Mixin for link effect
 =linkhover
