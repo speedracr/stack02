@@ -2,6 +2,8 @@
 @import "bootstrap-variables"
 @import "effects"
 @import "navbar"
+@import "footer"
+@import "index"
 // import content, navbar
 @import "bootstrap"
 
@@ -33,19 +35,62 @@ a.downloadlink
   text-shadow:        $shadow1
 
 // Hero section
+.herowrapper
+  width:                  65%
+  margin-top:             4em
+  margin-left:            auto
+  margin-right:           auto
+  text-align:             center
+
+  +responsive-max-width($screen-md, 90%)
+
 header.hero 
   background:             url(../img/backgr_test.jpg) no-repeat
   background-size:        cover
-  padding-bottom:         150px
+  padding-bottom:         72px
   background-attachment:  fixed
-
-h1.title,
-h2.subtitle
   color:                  $white
 
-.firstline
-  font-size:              1.6em
+.gradient-overlay
+  // min-height:             602px
+  +gradientbackgroundbottom($astop1, $astop2, $bstop2, $astop3, $astop4, $astop5, $acolor1, $acolor2, $acolor3, $acolor4)
 
-.secondline
+h1.title
+  font-size:              4.2em
+
+h2.subtitle
+  font-size:              3.2em
+  margin-top:             10px
+
+  @media (max-width: $screen-md)
+    font-size:            2.4em
+    margin-top:           6px
+
+.titletext
+  margin-top:             2em
+  font-size:              1.8em
+  width:                  56%
+  margin-left:            auto
+  margin-right:           auto
+
+  +responsive-max-width($screen-md, 100%)
+
+.announce
+  text-transform:         uppercase
+  padding-bottom:         0.2em
+  font-size:              0.8em
+
+.nextcourse 
+  margin-top:             0.4em
   font-size:              1.2em
-  letter-spacing:         0.2em
+
+.nextcoursedate
+  padding:                3px
+  margin-top:             1.4em
+  letter-spacing:         0.04em
+  text-transform:         uppercase
+  font-weight:            700
+  font-size:              0.7em
+  color:                  darken($brand-primary, 25%)
+  background:             rgba($white, 0.8)
+  border-radius:          2px       

@@ -1,0 +1,70 @@
+footer
+  margin-top:         2em
+  padding-bottom:     2em
+  background-color:   #141414
+  background:         url(../img/escheresque_ste_@2X.png)
+  // background:         url(../img/congruent_outline.png)
+
+.gradient
+  +gradientbackground(rgba(0,0,0,0.4), rgba(0,0,0,0))
+  min-height:         12px
+
+
+// Links
+.footerwrapper
+  margin-top:         1.8em
+  color:              $white
+
+  a
+    color:            $white
+    +transition($transition2)
+
+    &:hover,
+    &:focus
+      // background:     $brand-primary
+      color:          $white
+      border-bottom:  $brand-primary 3px solid
+
+  a.no-border
+    &:hover,
+    &:focus
+      border-bottom:  none
+
+.footerlinks
+  margin-bottom:      2em
+
+.footerlinklist 
+  dt 
+    text-transform:     uppercase
+    margin-bottom:      0.4em
+    font-size:          $font-size-large
+  dd 
+    padding-top:        0.3em
+
+
+// Logo and credits
+.endcredits
+  padding-top:          0.6em
+  line-height:          2em
+
+img.footerlogo
+  top:                  5px
+  width:                160px
+  vertical-align:       middle  
+
+a.twittericon
+  font-size:            1.4em
+  padding-top:           4px
+  vertical-align:       middle  
+
+  &:hover,
+  &:focus
+    color:              $twittercolor
+    border-bottom:      none
+
+.footeremail
+  vertical-align:       middle    
+
+a.midcredit
+  margin:               0 3em
+

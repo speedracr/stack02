@@ -1,24 +1,26 @@
 .sitewrapper
   / This carries the hero img
+  %a{:name => "top"}
   %header.hero
+    .gradient-overlay
     = render '_navbarmain.html.haml'
     .container 
       .row    
-        .col-md-12.center
+        .herowrapper
           %h1.title.shadow
-            %span.firstline
-              Learn to code in Berlin. 
-              %br/
-            %span.secondline
-              Full time. Hands on.
+            Learn to code in Berlin
           %h2.subtitle.shadow
-            .announce
+            Full time. Hands on.
+          .titletext
+            .announce.shadow
               Upcoming course
-            .nextcourse
+              .borderwrapper
+                .borderbottom
+            .nextcourse.shadow
               Web Application Development
               %br/
               with Ruby on Rails
-              %br/
+            .nextcoursedate
               11 weeks, Sep. 15 - Nov. 28
 
   %section.container
@@ -130,10 +132,10 @@
     .row
       .col-md-12
         .press
-          %h4 Find us mentioned on
+          %h4 Oh, we were mentioned on
           .col-md-3.col-md-offset-3 VentureVillage
           .col-md-3 CareerFoundry
           
 
 
-  %footer= render '_footer.html.haml'
+  = render '_footer.html.haml'

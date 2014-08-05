@@ -1,5 +1,11 @@
+// General styling
+.borderbottom
+  border-bottom:        1px solid $white
+
+
 // Animation and transitions
 $transition1:            all 0.2s linear
+$transition2:            all 0.2s ease-in-out
 $transition_none:        all 0s
 
 =transition($transition)
@@ -27,26 +33,32 @@ $shadow1:         0 0 10px rgba(0,0,0,1.0)
   background-image: linear-gradient(to bottom,$color1,$color2)
 
 $astop1:          0%
-$astop2:          10%
-$astop3:          20%
-$astop4:          100%
+$bstop2:          20%
+$astop2:          25%
+$astop3:          65%
+$astop4:          75%
+$astop5:          100%
 
 $acolor1:         rgba(0,0,0,0)
-$acolor2:         rgba(0,0,0,0.4)
-$acolor3:         rgba(0,0,0,0.65)
-$acolor4:         rgba(0,0,0,0.9)
+$acolor2:         rgba(0,0,0,0.7)
+$acolor3:         rgba(0,0,0,0.8)
+$acolor4:         rgba(0,0,0,1)
 
-=gradientbackgroundbottom($stop1, $stop2, $stop3, $stop4, $color1, $color2, $color3, $color4)
-  // use with bottom: 0, position: absolute, z-index: [on top] for wrapper-div to align with bottom
-  // recommended stops are 0%, 10%, 20%, 100%
-  // recommended opacities: 0, 0.4, 0.65, 0.9
-  background: linear-gradient(to bottom, $color1, $stop1, $color2, $stop2, $color3, $stop3, $color4, $stop4)
+=gradientbackgroundbottom($stop1, $stop2, $stopb2, $stop3, $stop4, $stop5, $color1, $color2, $color3, $color4)
+  // use with bottom: 0, position: absolute, z-index: [on top] for wrapper-div to align with bottom >> rookie.com
+  background: -webkit-linear-gradient(top, $color1 $stop1, $color1 $stop2, $color2 $stop3, $color3 $stop4, $color4 $stop5), -webkit-linear-gradient(top, $color3 $stop1, $color4 $stopb2)
+  background: -o-linear-gradient(top, $color1 $stop1, $color1 $stop2, $color2 $stop3, $color3 $stop4, $color4 $astop5), -o-linear-gradient(top, $color3 $stop1, $color4 $stopb2)  
+  background: -ms-linear-gradient(top, $color1 $stop1, $color1 $stop2, $color2 $stop3, $color3 $stop4, $color4 $stop5), -ms-linear-gradient(top, $color3 $stop1, $color4 $stopb2)
+  background: linear-gradient(to bottom, $color1 $stop1, $color1 $stop2, $color2 $stop3, $color3 $stop4, $color4 $stop5), linear-gradient(to bottom, $color3 $stop1, $color4 $stopb2)
 
 // Mixin for link effect
 =linkhover
-  background:   ($brand-primary, 13.5%)
-  color:        $white
+  background:       ($brand-primary, 13.5%)
+  color:            $white
 
+=linkpadding
+  padding:          2px 4px
+  border-radius:    2px
 
 // Selection color
 =selection($color)

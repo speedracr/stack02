@@ -41,7 +41,7 @@ img.logo
   margin-top:       8px
 
 
-// Hamburger styling
+// hamburger styling
 .navbar-default .navbar-toggle
   &:hover,
   &:focus
@@ -55,7 +55,7 @@ img.logo
   border-radius:    1px
 
 // Navbar setup
-@media screen and (min-width: $screen-sm)
+@media screen
   ul.nav
     font-size: 17px
     font-weight: 700
@@ -77,12 +77,8 @@ img.logo
           +transition($transition_none)
           background:   darken($brand-primary, 13.5%)    
 
-    li.border-bottom
-      margin-bottom: 3px
-
-      &:hover,
-      &:focus
-        margin-bottom: 0
+  li.open > a.navlink
+    border-bottom:    0
 
   a.navlink
     margin:         0 0.6em
@@ -92,10 +88,11 @@ img.logo
     &:hover,
     &:focus
       +transition($transition_none)
-      border-bottom: 3px solid white
+      border-bottom: 3px solid white    
 
-  li.open > a.navlink
-    border-bottom:    0
+.navbar-collapse
+  border-top:             none!important    
+  box-shadow:             none!important
 
 .dropdown-menu
   -webkit-box-shadow:     none!important
@@ -106,6 +103,7 @@ img.logo
 
     a
       color:                $gray-dark
+      border-radius:        2px
       font-size:            1.1em
       text-transform:       none
       +transition($transition_none)    
@@ -123,3 +121,24 @@ img.logo
 
   .navbar-default > li > a.navlink
     background:   $gray-light 
+
+
+// Overrides for collapsed menu
+// $grid-float-breakpoint-max in bootstrap-variables set to screen-md-min = 991px
+@media screen and (max-width: $screen-md-min)
+  .dropdown-menu > li > a 
+    width:                24em
+    color:                $white!important
+    background:           rgba(0,0,0,0.4)
+    border-radius:        2px
+    font-size:            1.1em
+    text-transform:       none
+    +transition($transition_none)    
+
+    &:hover,
+    &:focus
+      background:   $brand-primary!important
+
+  .navbar-highlight 
+    width:          10em
+    text-align:     center
