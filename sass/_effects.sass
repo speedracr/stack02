@@ -1,7 +1,12 @@
 // General styling
 .borderbottom
-  border-bottom:        1px solid $white
+  border-bottom:        1px solid
 
+.borderwhite
+  border-color:         $white
+
+.borderdark
+  border-color:         $gray-darker
 
 // Animation and transitions
 $transition1:            all 0.2s linear
@@ -70,3 +75,11 @@ $acolor4:         rgba(0,0,0,1)
 
   ::-webkit-selection
     background: $color
+
+// Image grayscale effect
+=grayscale($value)
+  -webkit-filter  : grayscale($value) 
+  -moz-filter     : grayscale($value)
+  -ms-filter      : grayscale($value)
+  -o-filter       : grayscale($value)
+  filter          : grayscale($value)

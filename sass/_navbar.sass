@@ -66,16 +66,8 @@ img.logo
     
     li
       a.btn-navbar
-        background:       lighten($brand-primary, 10%)
-        color:            $white
-        letter-spacing:   0.02em 
         margin:           2px 0 0 1.6em
-        border-radius:    2px
-
-        &:hover,
-        &:focus
-          +transition($transition_none)
-          background:   darken($brand-primary, 13.5%)    
+        +applybutton    
 
   li.open > a.navlink
     border-bottom:    0

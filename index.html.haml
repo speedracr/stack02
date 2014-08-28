@@ -1,6 +1,6 @@
 .sitewrapper
-  / This carries the hero img
   %a{:name => "top"}
+  / header.hero carries the hero img
   %header.hero
     .gradient-overlay
     = render '_navbarmain.html.haml'
@@ -21,49 +21,84 @@
               %br/
               with Ruby on Rails
             .nextcoursedate
-              11 weeks, Sep. 15 - Nov. 28
+              11 weeks, Sep. 15 - Nov. 28 2014
+            .othercourses
+              %a{:href => "faqs.html"} View all of our courses
 
   %section.container
     .row
       .col-md-6.imgcolumn
-        Web Application Development
+        .courseheading
+          .firstline Web Application
+          .secondline Development
       .col-md-6.textcolumn
-        %ul.nobullets
-          %li 11 weeks of Web Application Development
+        %ul.nobullets.coursefacts
+          %li
+            %span.highlight 11 weeks
+            %span< of Web Application Development
           %li Ruby on Rails
           %li JavaScript &amp; jQuery
           %li HTML/CSS3 and frontend frameworks
-          %li Monday to Friday, 9am to 6pm
-          %li Experienced instructors
-          %li from EUR 5,600
-          %li 
-            %a{:href => "apply.html", :class => "applylink"} Apply now!
+          %li.divider Monday to Friday, 9am to 6pm
+          %li Experienced instructor
+          %li.price 
+            starts at EUR 5,600
+            %span.vat incl. VAT
+          %li.apply 
+            %a{:href => "apply.html", :class => "applylink"} Apply Now
+            %span.divider.hidden-xs
+            %a{:href => "faqs.html", :class => "detailslink hidden-xs"} Schedule and FAQs
+            %a{:href => "faqs.html", :class => "detailslink hidden-sm hidden-md hidden-lg"} Schedule           
 
       .col-md-12.center
-        %p
-          We teach you how to plan, build and deploy web applications, and take you from the basics all the way to building full-blown web applications with Ruby on Rails and using a range of tools and technologies - from frontend frameworks and databases to version control, testing, server setup and more.
+        %p.introtext
+          We teach you how to plan, build and deploy web applications: With us, you'll go from the basics all the way to building full-blown web applications with Ruby on Rails and a range of tools and technologies from frontend frameworks and databases to version control, testing, server setup and deployment.
 
     .row
       .col-md-12
         %h3.sectiontitle.center Our partners
       .col-md-12.center
         %p
-          Betahaus
+          %a{:href => "http://oreo.com", :class => "partnerlink"}          
+            %img{:src => "img/stripe.png", :class => "partnerlogo", :alt => ""}/
 
   %section.container
     .row
       .col-md-12
-        %h3.sectiontitle.center Course content
+        %h3.sectiontitle.center The road map - what we teach
       .col-md-12.text
         %p
           We don’t require previous programming experience and get you up to speed in the course: With new lessons and exercises every day, followed by time for practice and project work, you will be writing code every day of the week and put your skills to use in class projects.
 
-        %p
-          %dl.contentlist 
-            %dt This is our roadmap:
-            %dd Introductory prep course with a focus on HTML/CSS and programming basics
-            %dd More
-            %dd Even more
+    .row
+      .col-md-12  
+        .curriculum.borderbottom.borderdark Curriculum
+      .col-md-6
+        %dl.contentlist 
+          %dd.week Introduction week
+          %dd Introduction to web programming (Ruby and the Sinatra framework)
+          %dd Introduction to Ruby on Rails development
+          %dd.week Weeks 2 and 3
+          %dd Ruby programming and web integration (HTTP, JSON and XML, API integration)
+          %dd ActiveRecord and Rails forms, model-view-controller architecture
+          %dd.week Weeks 4 and 5
+          %dd Routes, cookies and sessions
+          %dd JavaScript and jQuery, AJAX
+          %dd Introduction to test-driven development
+      .col-md-6.pushdown  
+        %dl.contentlist
+          %dd.week Weeks 6 and 7
+          %dd Advanced Ruby on Rails
+          %dd SQL basics
+          %dd Rails and frontend development - HTML5, Bootstrap framework
+          %dd.week Weeks 8 and 9
+          %dd Class project
+          %dd Server and cloud platform deployment
+          %dd.week Weeks 10 and 11
+          %dd Personal project
+          %dd Wrap-up
+
+  / AddThis: PDF download and download icon
 
   %section.container
     .row
@@ -71,7 +106,7 @@
         %h3.sectiontitle.center Instructor
     .row
       .col-md-4.imgcolumn
-        %img{:src => "img/edward.jpg", :alt => "Edward"}/
+        %img{:src => "img/edward.jpg", :alt => "Edward", :class => "mainimg"}/
       .col-md-8.textcolumn
         %p
           Our Web Application Development class is led by Edward McCaughan. With a degree in robotics and electrical engineering and several years of experience as a Ruby on Rails developer working on real-life applications and projects, Edward brings both an excellent theoretical understanding and practical experience to the course.
@@ -84,7 +119,7 @@
         %h3.sectiontitle.center Recruiting program
     .row
       .col-md-4.imgcolumn
-        %img{:src => "img/edward.jpg", :alt => "recruiting"}/
+        %img{:src => "img/replace.jpg", :alt => "recruiting", :class => "mainimg"}/
       .col-md-8.textcolumn
         %p
           We partner with a number of Berlin companies that are looking for great talent to join them, and will further expand our recruiting program in the future. In any case, we are happy to get you in touch with our partners, and should you pass the hiring interviews and join one of them full-time, we will sweeten the deal and refund EUR 1,000.- of your tuition. If you are a company looking for ambitious new talents, in particular junior Rails developers, you should totally 
@@ -111,6 +146,7 @@
         %p
           As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work. (The German Federal Foreign Office has more information on its 
           %a{:href => "http://www.auswaertiges-amt.de/EN/EinreiseUndAufenthalt/Visabestimmungen_node.html"} website
+          )
           %br/
           Please make sure you know the requirements for your specific situation and contact us and the German embassy in your country when in doubt. Also let us know if you need assistance with German-language forms or requests.
           %br/
@@ -119,23 +155,35 @@
   %section.container
     .row
       .col-md-12
+        .cta.highlightfont Take the red pill
         .applybutton
-          %a{:href => "apply.html"} Apply now!
+          %a{:href => "apply.html", :class => "applylink"} Apply Now
 
-  %section.container
+  %section.container.darkbg.dist.roundradius
     .row
       .col-md-12
         .email
-          %p Sign up for our newsletter to hear about new course announcements
+          %p.newslettertitle Get news from us on upcoming courses
+          %fieldset.newsletter
+            #mc_embed.signup
+              %form{:action => "http://stackademy.us4.list-manage.com/subscribe/post?u=eb73bde3996374533e101ff3c&amp;id=d406f69d8b", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank", :novalidate => true}
+                .mc-field-group
+                  %input{:type => "email", :class => "required email", :placeholder => "ENTER YOUR EMAIL ADDRESS", :value => "", :name => "EMAIL", :id => "mce-EMAIL"}
+                  %input{:type => "submit", :class => "colorbutton", :value => "Sign up", :name => "subscribe", :id => "mc-embedded-subscribe"}
+                #mce-responses.clear
+                  .response#mce-error-response{:style => "display:none"}
+                  .response#mce-success-response{:style => "display:none"}
 
   %section.container
     .row
       .col-md-12
         .press
-          %h4 Oh, we were mentioned on
-          .col-md-3.col-md-offset-3 VentureVillage
-          .col-md-3 CareerFoundry
-          
-
+          %h3.sectiontitle.center Oh, we were mentioned on
+          .col-md-4.col-md-offset-2
+            %a{:href => "http://venturevillage.eu/the-7-best-ways-to-learn-how-to-code"}
+              %img{:src => "img/vv.png", :alt => "VentureVillage", :class => "pressmention venturevillage"}/
+          .col-md-4
+            %a{:href => "http://blog.careerfoundry.com/20-ways-to-learn-how-to-code-3/"}
+              %img{:src => "img/cf.png", :alt => "CareerFoundry", :class => "pressmention careerfoundry"}/
 
   = render '_footer.html.haml'

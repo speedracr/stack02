@@ -2,6 +2,8 @@
 @import "bootstrap-variables"
 @import "effects"
 @import "navbar"
+@import "assignments"
+@import "sidebar"
 @import "footer"
 @import "index"
 // import content, navbar
@@ -17,6 +19,9 @@ body a
     text-decoration:  none
 
 +selection(#0CAF60)
+
+.roundradius
+  border-radius:      2px
 
 .center
   text-align:         center
@@ -34,6 +39,12 @@ a.downloadlink
 .shadow
   text-shadow:        $shadow1
 
+.highlightfont
+  font-family:        $highlight-font-family
+
+.pushdown
+  margin-top:         1.6em
+
 // Hero section
 .herowrapper
   width:                  65%
@@ -50,6 +61,10 @@ header.hero
   padding-bottom:         72px
   background-attachment:  fixed
   color:                  $white
+  margin-bottom:          4em
+
+ul.nobullets
+  list-style-type:             none
 
 .gradient-overlay
   // min-height:             602px
@@ -93,4 +108,4 @@ h2.subtitle
   font-size:              0.7em
   color:                  darken($brand-primary, 25%)
   background:             rgba($white, 0.8)
-  border-radius:          2px       
+  border-radius:          2px   

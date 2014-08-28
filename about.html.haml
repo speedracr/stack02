@@ -6,12 +6,7 @@
     .container
       .row
         .col-md-3.hidden-sm
-          %sidebar
-            %ul.sidenav
-              %a{:href => "#"}
-                %li About
-              %a{:href => "#"}
-                %li FAQs
+          = render '_sidebar.html.haml'
         .col-md-9
           %h4.pagetitle About us
           .pagecontent

@@ -1,6 +1,6 @@
 @import bootstrap/variables
 @import iconfont.css
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Ubuntu:500,700|Asap:400,700)
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic|Ubuntu:500,700|Asap:400,700|Permanent+Marker)
 
 
 @font-face
@@ -34,7 +34,6 @@ $gray:                   lighten(#000, 33.5%) // #555
 $gray-light:             lighten(#000, 46.7%) // #777
 $gray-lighter:           lighten(#000, 93.5%) // #eee
 $white:                  #fff
-
 
 $brand-primary:         #00A4F0 
 $brand-secondary:       #0CAF60
@@ -70,10 +69,11 @@ $font-family-sans-serif:     Lato, Helvetica, Arial, sans-serif
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
-$font-family-base:        $font-family-sans-serif
+$font-family-base:           $font-family-sans-serif
 
 $font-size-base:             14px
 $font-size-large:            ceil(($font-size-base * 1.08)) //
+$font-size-xlarge:           ceil(($font-size-base * 3.5)) // 
 // $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
 
 // $font-size-h1:            floor(($font-size-base * 2.6)) // ~36px
@@ -93,7 +93,8 @@ $headings-font-family:       Ubuntu, sans-serif
 // $headings-font-family:       inherit
 $headings-font-weight:       500
 // $headings-line-height:    1.1
-// $headings-color:          inherit
+// $headings-color:             $gray
+$highlight-font-family:      'Permanent Marker'
 
 //== Iconography
 //
@@ -160,7 +161,7 @@ $headings-font-weight:       500
 // $table-border-color:            #ddd
 
 //== Buttons
-//
+
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 // $btn-font-weight:                normal
@@ -190,6 +191,48 @@ $headings-font-weight:       500
 // $btn-danger-border:              darken($btn-danger-bg, 5%)
 
 // $btn-link-disabled-color:        $gray-light
+
+
+// == JDK Button styles
+=applybutton
+  background:       lighten($brand-primary, 10%)
+  color:            $white
+  letter-spacing:   0.02em 
+  border-radius:    2px
+
+  &:hover,
+  &:focus
+    +transition($transition_none)
+    color:          $white
+    background:     darken($brand-primary, 13.5%)    
+
+=transparentbutton($btncolor)
+  background:       rgba(255,255,255,0.4)
+  color:            $btncolor
+  letter-spacing:   0.02em 
+  border-radius:    2px
+  border:           2px solid 
+  border-color:     $btncolor
+
+  &:hover,
+  &:focus
+    +transition($transition_none)
+    color:          darken($btncolor, 13.5%)   
+    border-color:   darken($btncolor, 13.5%)
+
+=colorbutton($btncolor, $bgcolor)
+  background:       $bgcolor
+  color:            $btncolor
+  // padding:          2px
+  letter-spacing:   0.02em 
+  border-radius:    2px
+  border:           none
+
+  &:hover,
+  &:focus
+    +transition($transition_none)
+    background:     darken($bgcolor, 10%)   
+
 
 //== Forms
 //
