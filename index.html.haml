@@ -22,8 +22,8 @@
               with Ruby on Rails
             .nextcoursedate
               11 weeks, Sep. 15 - Nov. 28 2014
-            .othercourses
-              %a{:href => "faqs.html"} View all of our courses
+            .othercourses.shadow
+              %a{:href => "faqs.html"} view all of our courses
 
   %section.container
     .row
@@ -35,14 +35,14 @@
         %ul.nobullets.coursefacts
           %li
             %span.highlight 11 weeks
-            %span< of Web Application Development
+            %span of Web Application Development
           %li Ruby on Rails
           %li JavaScript &amp; jQuery
           %li HTML/CSS3 and frontend frameworks
-          %li.divider Monday to Friday, 9am to 6pm
-          %li Experienced instructor
+          %li.divider Monday to Friday, 9am to 5pm
+          %li experienced instructor
           %li.price 
-            starts at EUR 5,600
+            starting at EUR 5,800
             %span.vat incl. VAT
           %li.apply 
             %a{:href => "apply.html", :class => "applylink"} Apply Now
@@ -122,8 +122,8 @@
         %img{:src => "img/replace.jpg", :alt => "recruiting", :class => "mainimg"}/
       .col-md-8.textcolumn
         %p
-          We partner with a number of Berlin companies that are looking for great talent to join them, and will further expand our recruiting program in the future. In any case, we are happy to get you in touch with our partners, and should you pass the hiring interviews and join one of them full-time, we will sweeten the deal and refund EUR 1,000.- of your tuition. If you are a company looking for ambitious new talents, in particular junior Rails developers, you should totally 
-          %a{:href => "contact.html"} let us know.
+          We partner with Berlin companies that are looking for great talent to join them, and will further expand our recruiting program in the future. In any case, we are happy to get you in touch with our partners, and should you pass the hiring interviews and join one of them full-time, we will sweeten the deal and refund EUR 1,000.- of your tuition. If you are a company looking for ambitious new talents, in particular junior Rails developers, contact Jonas Knipper for more at
+          <script type="text/javascript">eval(unescape("%75%72%67%79%75%30%33%3d%5b%27%25%36%38%25%36%39%25%37%32%25%36%35%27%2c%5b%27%25%36%33%25%36%66%25%36%64%27%2c%27%25%37%33%25%37%34%25%36%31%25%36%33%25%36%62%25%36%31%25%36%34%25%36%35%25%36%64%25%37%39%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%74%70%78%79%6e%35%35%3d%75%6e%65%73%63%61%70%65%28%75%72%67%79%75%30%33%29%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%74%70%78%79%6e%35%35%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%75%72%67%79%75%30%33%29%29%3b"));</script>
 
   %section.container
     .row
@@ -137,14 +137,14 @@
           Berlin is a city with rich history and a colorful present, and very easy to get comfortable in for international visitors. Startups are a big thing here, so chances are, you'll feel right at home, meet great people and discover a city that is unlike any other.
         %p
           We can help you find accommodation in Berlin, if 
-          %a{:href => "https://www.airbnb.com/s/Berlin--Germany"} Airbnb
-          , 
           %a{:href => "http://www.wimdu.com/berlin"} Wimdu 
+          , 
+          %a{:href => "https://www.airbnb.com/s/Berlin--Germany"} Airbnb
           , and 
           %a{:href => "http://www.9flats.com/us/berlin"} 9flats 
           don't do the trick.
         %p
-          As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work. (The German Federal Foreign Office has more information on its 
+          As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work even after their arrival. (The German Federal Foreign Office has more information on its 
           %a{:href => "http://www.auswaertiges-amt.de/EN/EinreiseUndAufenthalt/Visabestimmungen_node.html"} website
           )
           %br/
@@ -154,31 +154,32 @@
 
   %section.container
     .row
-      .col-md-12
+      .col-md-12.cushion
         .cta.highlightfont Take the red pill
         .applybutton
           %a{:href => "apply.html", :class => "applylink"} Apply Now
 
-  %section.container.darkbg.dist.roundradius
-    .row
-      .col-md-12
-        .email
-          %p.newslettertitle Get news from us on upcoming courses
-          %fieldset.newsletter
-            #mc_embed.signup
-              %form{:action => "http://stackademy.us4.list-manage.com/subscribe/post?u=eb73bde3996374533e101ff3c&amp;id=d406f69d8b", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank", :novalidate => true}
-                .mc-field-group
-                  %input{:type => "email", :class => "required email", :placeholder => "ENTER YOUR EMAIL ADDRESS", :value => "", :name => "EMAIL", :id => "mce-EMAIL"}
-                  %input{:type => "submit", :class => "colorbutton", :value => "Sign up", :name => "subscribe", :id => "mc-embedded-subscribe"}
-                #mce-responses.clear
-                  .response#mce-error-response{:style => "display:none"}
-                  .response#mce-success-response{:style => "display:none"}
+  .emailwrapper
+    %section.container.dist
+      .row
+        .col-md-12
+          .emailsignup
+            %p.newslettertitle Get news from us on upcoming courses
+            %fieldset.newsletter
+              #mc_embed.signup
+                %form{:action => "http://stackademy.us4.list-manage.com/subscribe/post?u=eb73bde3996374533e101ff3c&amp;id=d406f69d8b", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank", :novalidate => true}
+                  .mc-field-group
+                    %input{:type => "email", :class => "required email", :placeholder => "ENTER YOUR EMAIL ADDRESS", :value => "", :name => "EMAIL", :id => "mce-EMAIL"}
+                    %input{:type => "submit", :class => "colorbutton", :value => "Sign up", :name => "subscribe", :id => "mc-embedded-subscribe"}
+                  #mce-responses.clear
+                    .response#mce-error-response{:style => "display:none"}
+                    .response#mce-success-response{:style => "display:none"}
 
   %section.container
     .row
-      .col-md-12
+      .col-md-12.cushion
         .press
-          %h3.sectiontitle.center Oh, we were mentioned on
+          %h3.sectiontitle.center Sweet, we were mentioned on
           .col-md-4.col-md-offset-2
             %a{:href => "http://venturevillage.eu/the-7-best-ways-to-learn-how-to-code"}
               %img{:src => "img/vv.png", :alt => "VentureVillage", :class => "pressmention venturevillage"}/

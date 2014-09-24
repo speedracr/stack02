@@ -5,6 +5,7 @@
 @import "assignments"
 @import "sidebar"
 @import "footer"
+@import "site"
 @import "index"
 // import content, navbar
 @import "bootstrap"
@@ -12,6 +13,7 @@
 
 // General settings and overrides
 $body-bg: #ecf0f1
+
 body a
   +transition($transition1)
   &:hover,
@@ -27,23 +29,33 @@ body a
   text-align:         center
 
 .caret
-  margin-top:         -3px
+  margin-top:            -3px
 
 a.downloadlink
-  font-weight:        700
+  font-weight:           700
 
   &:hover,
   &:active
-    border-bottom:    2px solid $brand-primary
+    border-bottom:        2px solid $brand-primary
 
 .shadow
-  text-shadow:        $shadow1
+  text-shadow:            $shadow1
 
 .highlightfont
-  font-family:        $highlight-font-family
+  font-family:              $highlight-font-family
+  -webkit-font-smoothing:   antialiased
+  text-rendering:           optimizeLegibility
+  text-shadow:              0 0 2px rgba(0,0,0,0.4)
+
 
 .pushdown
-  margin-top:         1.6em
+  margin-top:             1.6em
+
+.cushion
+  padding:                2em 0 2em
+
+.cushion-top
+  padding-top:            1.4em
 
 // Hero section
 .herowrapper
@@ -90,22 +102,17 @@ h2.subtitle
 
   +responsive-max-width($screen-md, 100%)
 
-.announce
-  text-transform:         uppercase
-  padding-bottom:         0.2em
-  font-size:              0.8em
+.pagetitle
+  color:                  $gray-light
 
-.nextcourse 
-  margin-top:             0.4em
-  font-size:              1.2em
+.border-right
+  border-right:           1px solid $gray-lighter
 
-.nextcoursedate
-  padding:                3px
-  margin-top:             1.4em
-  letter-spacing:         0.04em
-  text-transform:         uppercase
-  font-weight:            700
-  font-size:              0.7em
-  color:                  darken($brand-primary, 25%)
-  background:             rgba($white, 0.8)
-  border-radius:          2px   
+.border-left
+  border-left:           1px solid $gray-lighter
+
+.padding-left
+  padding-left:          2em
+
+.inner-border
+  bor
