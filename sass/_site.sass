@@ -6,20 +6,32 @@
 // Detail pages
 section.contact
   text-align:             center
-  padding:                0.6em 0.3em
+  padding:                1.4em 0.3em
   color:                  $white
   background:             rgba($gray-dark, 0.4)
   text-transform:         uppercase
-  font-size:              3em
+  font-size:              2.4em
+
+  @media (max-width: $screen-md)
+    font-size:            1.6em
+    line-height:          1.8em
 
   a 
     color:                $white
+    +transition($transition2)
 
     &:hover,
     &:focus
       color:              $white
+      border-bottom:  $brand-primary 3px solid      
 
 .inner-border
   margin:                 1% 0
-  border:                 1px solid $white
+  border:                 0px solid $white
   border-radius:          2px
+
+.inner-text
+  padding:                1% 0
+
+#twitter-widget-0
+  margin:                 10px 0 0

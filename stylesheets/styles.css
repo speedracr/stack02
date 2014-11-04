@@ -314,26 +314,10 @@ img.footerlogo {
   vertical-align: middle;
 }
 
-/* line 55, ../sass/_footer.sass */
-a.twittericon {
-  font-size: 1.4em;
-  padding-top: 4px;
-  vertical-align: middle;
-}
-/* line 60, ../sass/_footer.sass */
-a.twittericon:hover, a.twittericon:focus {
-  color: #55acee;
-  border-bottom: none;
-}
-
 /* line 65, ../sass/_footer.sass */
 .footeremail {
+  padding-left: 7em;
   vertical-align: middle;
-}
-
-/* line 68, ../sass/_footer.sass */
-a.midcredit {
-  margin: 0 3em;
 }
 
 /* line 1, ../sass/_site.sass */
@@ -346,26 +330,48 @@ a.midcredit {
 /* line 7, ../sass/_site.sass */
 section.contact {
   text-align: center;
-  padding: 0.6em 0.3em;
+  padding: 1.4em 0.3em;
   color: #fff;
   background: rgba(20, 20, 20, 0.4);
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.4em;
 }
-/* line 15, ../sass/_site.sass */
+@media (max-width: 992px) {
+  /* line 7, ../sass/_site.sass */
+  section.contact {
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+}
+/* line 19, ../sass/_site.sass */
 section.contact a {
   color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-/* line 18, ../sass/_site.sass */
+/* line 23, ../sass/_site.sass */
 section.contact a:hover, section.contact a:focus {
   color: #fff;
+  border-bottom: #00A4F0 3px solid;
 }
 
-/* line 22, ../sass/_site.sass */
+/* line 28, ../sass/_site.sass */
 .inner-border {
   margin: 1% 0;
-  border: 1px solid #fff;
+  border: 0px solid #fff;
   border-radius: 2px;
+}
+
+/* line 33, ../sass/_site.sass */
+.inner-text {
+  padding: 1% 0;
+}
+
+/* line 36, ../sass/_site.sass */
+#twitter-widget-0 {
+  margin: 10px 0 0;
 }
 
 /* line 2, ../sass/_index.sass */
