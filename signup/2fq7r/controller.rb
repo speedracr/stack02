@@ -1,0 +1,1 @@
+layout 'layout-sub.html.haml'

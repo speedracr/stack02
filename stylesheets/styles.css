@@ -8961,13 +8961,13 @@ button.close {
     display: none !important;
   }
 }
-/* line 17, ../sass/styles.sass */
+/* line 18, ../sass/styles.sass */
 body a {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 19, ../sass/styles.sass */
+/* line 20, ../sass/styles.sass */
 body a:hover, body a:focus {
   text-decoration: none;
 }
@@ -8987,36 +8987,36 @@ body a:hover, body a:focus {
   background: #0CAF60;
 }
 
-/* line 25, ../sass/styles.sass */
+/* line 26, ../sass/styles.sass */
 .roundradius {
   border-radius: 2px;
 }
 
-/* line 28, ../sass/styles.sass */
+/* line 29, ../sass/styles.sass */
 .center {
   text-align: center;
 }
 
-/* line 31, ../sass/styles.sass */
+/* line 32, ../sass/styles.sass */
 .caret {
   margin-top: -3px;
 }
 
-/* line 34, ../sass/styles.sass */
+/* line 35, ../sass/styles.sass */
 a.downloadlink {
   font-weight: 700;
 }
-/* line 37, ../sass/styles.sass */
+/* line 38, ../sass/styles.sass */
 a.downloadlink:hover, a.downloadlink:active {
   border-bottom: 2px solid #00A4F0;
 }
 
-/* line 41, ../sass/styles.sass */
+/* line 42, ../sass/styles.sass */
 .shadow {
   text-shadow: 0 0 10px black;
 }
 
-/* line 44, ../sass/styles.sass */
+/* line 45, ../sass/styles.sass */
 .highlightfont {
   font-family: "permanentmarker";
   -webkit-font-smoothing: antialiased;
@@ -9024,22 +9024,22 @@ a.downloadlink:hover, a.downloadlink:active {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-/* line 51, ../sass/styles.sass */
+/* line 52, ../sass/styles.sass */
 .pushdown {
   margin-top: 1.6em;
 }
 
-/* line 54, ../sass/styles.sass */
+/* line 55, ../sass/styles.sass */
 .cushion {
   padding: 2em 0 2em;
 }
 
-/* line 57, ../sass/styles.sass */
+/* line 58, ../sass/styles.sass */
 .cushion-top {
   padding-top: 1.4em;
 }
 
-/* line 61, ../sass/styles.sass */
+/* line 62, ../sass/styles.sass */
 .herowrapper {
   width: 65%;
   margin-top: 4em;
@@ -9048,13 +9048,13 @@ a.downloadlink:hover, a.downloadlink:active {
   text-align: center;
 }
 @media (max-width: 992px) {
-  /* line 61, ../sass/styles.sass */
+  /* line 62, ../sass/styles.sass */
   .herowrapper {
     width: 90%;
   }
 }
 
-/* line 70, ../sass/styles.sass */
+/* line 71, ../sass/styles.sass */
 header.hero {
   background: url(../img/backgr_test.jpg) no-repeat;
   background-size: cover;
@@ -9064,12 +9064,12 @@ header.hero {
   margin-bottom: 4em;
 }
 
-/* line 78, ../sass/styles.sass */
+/* line 79, ../sass/styles.sass */
 ul.nobullets {
   list-style-type: none;
 }
 
-/* line 81, ../sass/styles.sass */
+/* line 82, ../sass/styles.sass */
 .gradient-overlay {
   background: -webkit-linear-gradient(top, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.8) 75%, black 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, black 20%);
   background: -o-linear-gradient(top, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.8) 75%, black 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, black 20%);
@@ -9077,25 +9077,25 @@ ul.nobullets {
   background: linear-gradient(to bottom, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.7) 65%, rgba(0, 0, 0, 0.8) 75%, black 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, black 20%);
 }
 
-/* line 85, ../sass/styles.sass */
+/* line 86, ../sass/styles.sass */
 h1.title {
   font-size: 4.2em;
 }
 
-/* line 88, ../sass/styles.sass */
+/* line 89, ../sass/styles.sass */
 h2.subtitle {
   font-size: 3.2em;
   margin-top: 10px;
 }
 @media (max-width: 992px) {
-  /* line 88, ../sass/styles.sass */
+  /* line 89, ../sass/styles.sass */
   h2.subtitle {
     font-size: 2.4em;
     margin-top: 6px;
   }
 }
 
-/* line 96, ../sass/styles.sass */
+/* line 97, ../sass/styles.sass */
 .titletext {
   margin-top: 2em;
   font-size: 1.8em;
@@ -9104,28 +9104,28 @@ h2.subtitle {
   margin-right: auto;
 }
 @media (max-width: 992px) {
-  /* line 96, ../sass/styles.sass */
+  /* line 97, ../sass/styles.sass */
   .titletext {
     width: 100%;
   }
 }
 
-/* line 105, ../sass/styles.sass */
+/* line 106, ../sass/styles.sass */
 .pagetitle {
   color: #777777;
 }
 
-/* line 108, ../sass/styles.sass */
+/* line 109, ../sass/styles.sass */
 .border-right {
   border-right: 1px solid #bbbbbb;
 }
 
-/* line 111, ../sass/styles.sass */
+/* line 112, ../sass/styles.sass */
 .border-left {
   border-left: 1px solid #bbbbbb;
 }
 
-/* line 114, ../sass/styles.sass */
+/* line 115, ../sass/styles.sass */
 .padding-left {
   padding-left: 2em;
 }
