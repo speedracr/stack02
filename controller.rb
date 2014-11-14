@@ -2,4 +2,6 @@ ignore /sass/
 ignore /javascripts/
 ignore /\/_.*/
 
-layout 'layout.html.haml'
+layout 'layouts/layout.html.haml'
+
+ignore /layouts/

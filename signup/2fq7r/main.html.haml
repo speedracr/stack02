@@ -1,0 +1,27 @@
+%section#signup
+  .container  
+    %img{:src => "../../img/stckst.svg", :class => "logo", :alt => "Stackademy"}/
+    .row
+      .col-md-3
+        .nav-wrapper
+          %ul.nav.nav-tabs.nav-stacked.nav-noborder#myTab{:role => "tablist"}
+            %li.active{:role => "presentation"}
+              %a(href="#home" role="tab" data-toggle="tab" class="signup") Home
+            %li{:role => "presentation"}
+              %a(href="#profile" role="tab" data-toggle="tab" class="signup") Profile
+            %li{:role => "presentation"}
+              %a(href="#messages" role="tab" data-toggle="tab" class="signup") Messages
+            %li{:role => "presentation"}
+              %a(href="#settings" role="tab" data-toggle="tab" class="signup") Settings
+      .col-md-9   
+        .tab-content
+          .tab-pane.active#home{:role => "tabpanel"}
+            Here be more text.
+          .tab-pane#profile{:role => "tabpanel"}
+            Profile text.
+          .tab-pane#messages{:role => "tabpanel"}
+            Messages text.
+          .tab-pane#settings{:role => "tabpanel"}
+            Settings text.
+    .row  
+      .col-md-4

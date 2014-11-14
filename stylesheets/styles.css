@@ -8961,6 +8961,37 @@ button.close {
     display: none !important;
   }
 }
+/* line 1, ../sass/_sub.sass */
+#signup > .container > img.logo {
+  margin-top: 1.2em;
+  margin-bottom: 2em;
+}
+
+/* line 5, ../sass/_sub.sass */
+.redtest {
+  color: red;
+}
+
+/* line 8, ../sass/_sub.sass */
+.nav-tabs > li > a {
+  color: #555555;
+}
+
+/* line 11, ../sass/_sub.sass */
+.nav-tabs > li.active > a.signup {
+  border: 0 !important;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #00A4F0;
+}
+/* line 17, ../sass/_sub.sass */
+.nav-tabs > li.active > a.signup:hover, .nav-tabs > li.active > a.signup:focus {
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #00A4F0;
+}
+
 /* line 18, ../sass/styles.sass */
 body a {
   -webkit-transition: all 0.2s linear;
