@@ -3,9 +3,9 @@
   / header.hero carries the hero img
   %header.hero
     .gradient-overlay
-    = render '_navbarmain.html.haml'
-    .container 
-      .row    
+    = partial '_navbarmain.html.haml'
+    .container
+      .row
         .herowrapper
           %h1.title.shadow
             Learn to code in Berlin
@@ -41,14 +41,14 @@
           %li HTML/CSS3 and frontend frameworks
           %li.divider Monday to Friday, 9am to 5pm
           %li experienced instructor
-          %li.price 
+          %li.price
             starting at EUR 5,950
             %span.vat incl. VAT
-          %li.apply 
+          %li.apply
             %a{:href => "apply.html", :class => "applylink"} Apply Now
             %span.divider.hidden-xs
             %a{:href => "faqs.html", :class => "detailslink hidden-xs"} Schedule and FAQs
-            %a{:href => "faqs.html", :class => "detailslink hidden-sm hidden-md hidden-lg"} Schedule           
+            %a{:href => "faqs.html", :class => "detailslink hidden-sm hidden-md hidden-lg"} Schedule
 
       .col-md-12.center
         %p.introtext
@@ -59,7 +59,7 @@
         %h3.sectiontitle.center Our partners
       .col-md-12.center
         %p
-          %a{:href => "http://www.betahaus.com/berlin", :target => "blank", :class => "partnerlink"}          
+          %a{:href => "http://www.betahaus.com/berlin", :target => "blank", :class => "partnerlink"}
             %img{:src => "img/betahaus.svg", :class => "partnerlogo", :alt => ""}/
 
   %section.container
@@ -71,10 +71,10 @@
           We don’t require previous programming experience and get you up to speed in the course: With new lessons and exercises every day, followed by time for practice and project work, you will be writing code every day of the week and put your skills to use in class projects.
 
     .row
-      .col-md-12  
+      .col-md-12
         .curriculum.borderbottom.borderdark Curriculum
       .col-md-6
-        %dl.contentlist 
+        %dl.contentlist
           %dd.week Introduction week
           %dd Introduction to web programming (Ruby and the Sinatra framework)
           %dd Introduction to Ruby on Rails development
@@ -84,7 +84,7 @@
           %dd.week Weeks 4 and 5
           %dd Routes, cookies and sessions
           %dd JavaScript and jQuery, AJAX
-      .col-md-6.pushdown  
+      .col-md-6.pushdown
         %dl.contentlist
           %dd.week Weeks 6, 7 and 8
           %dd Advanced Ruby on Rails
@@ -111,7 +111,7 @@
         %p
           Our Web Application Development class is led by Edward McCaughan. With a degree in robotics and electrical engineering and several years of experience as a Ruby on Rails developer working on real-life applications and projects, Edward brings both an excellent theoretical understanding and practical experience to the course.
           %br/
-          Edward has been teaching both beginner-level and advanced Ruby on Rails courses since 2013, and is a volunteer mentor at Rails Girls Berlin. 
+          Edward has been teaching both beginner-level and advanced Ruby on Rails courses since 2013, and is a volunteer mentor at Rails Girls Berlin.
 
   %section.container
     .row
@@ -136,15 +136,15 @@
         %p
           Berlin is a city with rich history and a colorful present, and very easy to get comfortable in for international visitors. Startups are a big thing here, so chances are, you'll feel right at home, meet great people and discover a city that is unlike any other.
         %p
-          We can help you find accommodation in Berlin, if 
-          %a{:href => "http://www.wimdu.com/berlin"} Wimdu 
-          , 
+          We can help you find accommodation in Berlin, if
+          %a{:href => "http://www.wimdu.com/berlin"} Wimdu
+          ,
           %a{:href => "https://www.airbnb.com/s/Berlin--Germany"} Airbnb
-          , and 
-          %a{:href => "http://www.9flats.com/us/berlin"} 9flats 
+          , and
+          %a{:href => "http://www.9flats.com/us/berlin"} 9flats
           don't do the trick.
         %p
-          As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work even after their arrival. (The German Federal Foreign Office has more information on its 
+          As an EU citizen, you can generally live and work in Berlin freely. Citizens of many other countries such as the United States, Canada and Israel can enter and stay in the EU for up to 90 days without a visa, which will suffice for the course, and may be able to extend their stay to a total of six months if looking for work even after their arrival. (The German Federal Foreign Office has more information on its
           %a{:href => "http://www.auswaertiges-amt.de/EN/EinreiseUndAufenthalt/Visabestimmungen_node.html"} website
           )
           %br/
@@ -188,4 +188,4 @@
             %a{:href => "http://blog.careerfoundry.com/20-ways-to-learn-how-to-code-3/"}
               %img{:src => "img/cf.png", :alt => "CareerFoundry", :class => "pressmention careerfoundry"}/
 
-  = render '_footer.html.haml'
+  = partial '_footer.html.haml'
